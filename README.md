@@ -15,7 +15,7 @@ Task 1
 
 Task 2
 1.   设有8 * 8 的方格迷宫，入口和出口分别在左上角和右上角，迷宫格子中分别有0和1,1代表不能走，迷宫走的规则如图。当迷宫给出后，找到一条从入口到出口的通路。
-![Image text]https://github.com/baobaotql/CCNU_Algorithm/blob/master/images/labyrinth_methods.jpg
+![Image text](https://github.com/baobaotql/CCNU_Algorithm/blob/master/images/labyrinth_methods.jpg)
 
 2.   （回溯法）在8×8格的国际象棋上摆放八个皇后，使其不能互相攻击，即任意两个皇后都不能处于同一行、同一列或同一斜线上，输出所有摆法。
 
