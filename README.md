@@ -18,7 +18,7 @@ baobao's CCNU_Algorithm homework
 
 
 
-![Image text](https://github.com/baobaotql/CCNU_Algorithm/blob/master/images/labyrinth_methods.jpg)
+![image](https://github.com/baobaotql/CCNU_Algorithm/blob/master/images/labyrinth_methods.jpg)
 
 
 
