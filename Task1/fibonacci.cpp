@@ -12,7 +12,6 @@ int recursion(int n)
 		return recursion(n - 1) + recursion(n - 2);
 	}
  } 
- 
 int non_recursion(int n)
 {
 	int sum = 0, sum_1 = 1, sum_2 = 1;
