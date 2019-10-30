@@ -12,8 +12,7 @@ int recursion(int n)
 		recursion(n/2);
 		printf("%d",n%2);	//因为输出在函数的后面 所以为逆序打印 
 	}
- } 
- 
+ }  
  int non_resursion(int n)
  {
  	int s[100];
