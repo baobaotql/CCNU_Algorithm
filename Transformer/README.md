@@ -1,1 +1,1 @@
-version ：tensorflow 1.2.0
+tensorflow 1.2.0
