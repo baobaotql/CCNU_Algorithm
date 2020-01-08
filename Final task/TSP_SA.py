@@ -33,8 +33,8 @@ coordinates = np.array([
     [71, 71],
     [74, 78],
     [87, 76],
-    [13, 40],
     [18, 40],
+    [13, 40],
     [82, 7],
     [62, 32],
     [58, 35],
@@ -148,6 +148,19 @@ while t > t2[0]:
 	print(t)  # 程序运行时间较长，打印t来监视程序进展速度
 # 用来显示结果
 
+def draw(bestPath):
+    '''
+
+    :param bestPath:
+    :return:
+    '''
+    ax = plt.subplot(111, aspect='equal')
+    ax.plot(coordinates[:, 0], coordinates[:, 1], 'x', color='blue')
+    for i, city in enumerate(coordinates):
+        ax.text(city[0], city[1], str(i))
+    ax.plot(coordinates[bestPath, 0], coordinates[bestPath, 1], color='red')
+    plt.show()
+
 print('最短路径为：', np.array(result[-1]))
 for i in solutionbest:
 	print(i, end="-->")
@@ -157,6 +170,6 @@ plt.plot(np.array(result))
 plt.ylabel("bestvalue")
 plt.xlabel("t")
 plt.show()
-
+draw(solutionbest)
 
 
