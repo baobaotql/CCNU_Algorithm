@@ -1,3 +1,4 @@
+//B1032
 #include<stdio.h>
 
 int school_score[100]={0};		//用来存储学校分数 
