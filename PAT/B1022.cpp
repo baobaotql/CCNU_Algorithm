@@ -16,6 +16,5 @@ int main()
 	{
 		printf("%d", ans[i]);
 	}
-	printf("%d",1 % 2);
 	return 0;
 }
