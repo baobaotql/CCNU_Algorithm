@@ -32,12 +32,11 @@ int main()
 			 {
 			 	ans[a++] = k - 1;	//Д©О»Н¬Ан 
 			 }
-
-		}
-	}
-				 for(int i = 0; i < a; i++)
+			 for(int i = 0; i < a; i++)
 			 {
 			 	i == a-1 ? printf("%d\n", ans[i]) : printf("%d ", ans[i]);
 			 }
+		}
+	}
 	return 0;
 }
