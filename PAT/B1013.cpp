@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<math.h>
 
-const int maxn = 10000;
+const int maxn = 1000000;
 int prime[maxn], num = 0;
 bool p[maxn] = {0};
 
@@ -25,7 +25,7 @@ int main()
 {
 	int m, n;
 	int count = 0;
-	scanf("%d %d", &m, &n);
+	scanf("%d%d", &m, &n);
 	Find_Prime(n);
 	for(int i = m; i <= n; i++)
 	{
