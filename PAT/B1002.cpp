@@ -16,14 +16,15 @@ int main()
     int a[100], cnt = 0;
     do 
 	{
-        a[cnt++] = ans % 10;
-        ans /= 10;
+        a[cnt++] = ans % 10;	//将每一位存进数组 
+        ans /= 10;	//缩短数字 
     } while (ans);
     
     for (int i = cnt - 1; i >= 0; i--)
     {
-        printf("%s",num[a[i]]); 
-        if (i)printf(" ");
+        cout << num[a[i]];
+        if (i)
+			printf(" ");
     }
     return 0;
 }
