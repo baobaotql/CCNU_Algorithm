@@ -1,23 +1,25 @@
-#include <stdio.h>
-#include <string.h>
+#include<iostream>
+#include<string>
+using namespace std;
+string s;
+string num[10] = { "ling","yi","er","san","si","wu","liu","qi","ba","jiu" };
 int main()
 {
-    char c[100];
-    int a[5];
-    char pinyin[][9] = { "ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
-    int i,n,t;
-    n = 0;
-    t = 0;
-    gets(c);
-    for(i=0;i<strlen(c);i++)
-        n = n + c[i] - 48;
-    while (n!=0)
+    getline(cin, s);
+    int ans = 0;
+    for (int i = 0; i < s.length(); i++)
     {
-        a[t] = n%10;
-        n = n/10;
-        t++;
+        ans +=s[i] - '0';
     }
-    printf("%s",pinyin[a[t-1]]);
-    for(i=t-2;i>=0;i--)
-        printf(" %s",pinyin[a[i]]);
-} 
+    int a[100], cnt = 0;
+    do {
+        a[cnt++] = ans % 10;
+        ans /= 10;
+    } while (ans);
+    for (int i = cnt - 1; i >= 0; i--)
+    {
+        cout << num[a[i]];
+        if (i)printf(" ");
+    }
+    return 0;
+}
