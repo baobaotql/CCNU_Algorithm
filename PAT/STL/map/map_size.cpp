@@ -9,6 +9,6 @@ int main()
 	mp['a'] = 10;
 	mp['b'] = 20;
 	mp['c'] = 30;
-	prntf("%d\n", mp.size());
+	printf("%d\n", mp.size());
 	return 0;
  } 
