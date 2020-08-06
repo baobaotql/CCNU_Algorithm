@@ -1,4 +1,4 @@
-# CCNU_Algorithm
+## CCNU_Algorithm
 baobao's CCNU_Algorithm homework
 
 # Task 1
