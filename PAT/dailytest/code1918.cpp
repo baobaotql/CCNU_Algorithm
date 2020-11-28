@@ -5,20 +5,25 @@
 #include <stack>
 #include <queue>
 #include <map>
+
 using  namespace std;
+
 struct node{
     double num;
     char op;
-    bool flag;//true表示操作数，false表示操作符
+    bool flag;	//true表示操作数，false表示操作符
 };
+
 string str;
 stack< node > s;
 queue< node > q;
+
 map< char , int> op;
+
 void change(string str)
 {
     for (int i = 0; i <str.length() ;) {
-        if(str[i]>='0' && str[i] <='9')//如果是数字
+        if(str[i]>='0' && str[i] <='9')	//如果是数字
         {
             struct node temp;
             temp.flag = true;
@@ -46,7 +51,7 @@ void change(string str)
                     q.push(s.top());
                     s.pop();
                 }
-                s.pop();//在栈中去除左括号
+                s.pop();	//在栈中去除左括号
             }
             i++;
         }else
@@ -63,6 +68,7 @@ void change(string str)
             i++;
         }
     }
+
     //在遍历完中缀表达式后，把栈中的操作符一次弹出到后缀表达式中
     while(!s.empty())
     {
@@ -112,7 +118,7 @@ int main(void)
 //    这里设置为1和2其实是有门道的，因为‘（’默认为0了，优先级最低
     op['+'] = op['-'] = 1;
     op['*'] = op['/'] = 2;
-    while(getline(cin,str),str!="0")//由于cin读取字符串时，遇到空格就会停止，所以用了getline，可以读一行
+    while(getline(cin,str),str!="0")	//由于cin读取字符串时，遇到空格就会停止，所以用了getline，可以读一行
     {
         for(string::iterator it =str.end(); it!=str.begin();it--)
         {
